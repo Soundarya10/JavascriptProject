@@ -1,0 +1,59 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Array Comparison</title>
+		<script type="text/javascript">
+			
+var array1 = new Array(3);
+//2D array creation
+for(var i =0; i < 3; i++){
+	array1[i] = new Array(3);
+}
+var abc = 1;
+for(var i =0; i < 3;i++){
+	for(var j=0; j < 3; j++){
+		array1[i][j] = abc;
+		abc = abc + 1;
+	}
+}
+for(var i =0; i < 3;i++){
+	for(var j=0; j < 3; j++){
+document.write(array1[i][j] + " ");
+
+
+		}
+		alert(array1[2][2]);
+		document.write("<br/>");
+
+	}
+
+
+var a = [1,6,14,2,90,56,87,34];
+ 
+function bubbleSort(a)
+{
+    var swapped;
+    do {
+        swapped = false;
+        for (var i=0; i < a.length-1; i++) {
+            if (a[i] > a[i+1]) {
+                var temp = a[i];
+                a[i] = a[i+1];
+                a[i+1] = temp;
+                swapped = true;
+            }
+        }
+    } while (swapped);
+}
+ 
+bubbleSort(a);
+document.write(a);
+
+	</script>
+
+		</head>
+
+		<body>
+
+		</body>
+		</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	
+	<head><title>Ammus Page </title>
+	<link rel="stylesheet" type="text/css" href="mystyle.css">
+	<script src="myScript.js"></script>
+	</head>
+	
+	<body>
+	
+		<h1>Soundarya Reddy</h1>
+		<form name="myForm" action="" onsubmit="return myFunction()" method="post">
+Enter the Value : <br>
+  <input type="text" name="firstname">
+  <br>
+  <br>
+  <input type="submit" value="Submit"> 
+</form>
+
+<button onclick="array()">Try it</button>
+
+<p id="demo"></p>
+
+<button onclick="num()">number</button>
+<button onclick="let()">letter</button>
+<script type="text/javascript">
+	var abc = [1,22,13,10,41];
+	var letters = ["hello","ammu","reddy","ellen"];
+document.getElementById("demo1").innerHTML = abc;
+document.getElementById("demo2").innerHTML = letters
+function num(){
+	abc.sort(function(a, b){return a - b});
+    document.getElementById("demo1").innerHTML = abc;
+}
+function let(){
+	letters.sort();
+	document.getElementById("demo2").innerHTML = letters;
+}
+
+
+</script>
+<p id = "demo1">hello</p>
+<p id = "demo2">hello</p>
+
+<!--Switch -->
+
+<input id="myInput" type="text" value="hello">
+<button onclick="checkswitch()">Check Fruit</button>
+
+<p id="demo3"></p>
+
+<script>
+function checkswitch() {
+  var text;
+  var casee = document.getElementById("myInput").value;
+
+  switch(casee) {
+    case "ammu":
+      text = "ammu is good!";
+      break;
+    case "reddy":
+      text = "hey there how r you";
+      break;
+
+    // add case here
+
+    default:
+      text = "you have reached default";
+  }
+  document.getElementById("demo3").innerHTML = text;
+}
+</script>
+
+
+
+		</body>
+</html>

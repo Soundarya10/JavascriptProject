@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  
+  <head><title>Ammus Page </title>
+  <link rel="stylesheet" type="text/css" href="mystyle.css">
+  <script language="javascript">
+var num,n,rev=0,r;
+num=prompt("Enter the number");
+n=num;
+while(parseInt(num)>0)
+{
+r=parseInt(num)%10;
+rev=parseInt(rev)*10+parseInt(r);
+num=parseInt(num)/10;
+}
+if(rev==parseInt(n))
+document.write(n+ " is a palindrome number");
+else
+document.write(n+ " is not a palindrome number");
+</script>
+</head>
+  
+  <body>
+  <script type="text/javascript">
+function checkPalindrome() {
+var revStr = "";
+var str = document.getElementById("str").value;
+var i = str.length;
+for(var j=i; j>=0; j--) {
+revStr = revStr+str.charAt(j);
+}
+if(str == revStr) {
+document.write(str+" -is Palindrome");
+} else {
+document.write(str+" -is not a Palindrome");
+}
+}
+</script>
+hello
+<form >
+Enter a String/Number: <input type="text" id="str" name="string" /><br />
+<input type="submit" value="Check" onclick="checkPalindrome();"/>
+</form>
+</body>
+</html>

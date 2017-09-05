@@ -1,0 +1,34 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Fibonacci series</title>
+		<script type="text/javascript">
+			function fibonocci(){
+
+	var fibo = parseInt(document.getElementById("inCount").value);
+	var a = 0, b = 1, sum = 0;
+				series = "Fibonacci series </b>";
+
+				for(i = 0; i < fibo; i ++) {
+					series += a + " ";
+					sum = a + b;
+					a = b;
+					b = sum;
+
+			}
+
+document.getElementById("demo").innerHTML = series;
+}
+
+		</script>
+		</head>
+		<body>
+			
+		
+Enter the count of terms: <input id="inCount" />
+
+		<button id="btnGen" onclick="fibonocci()">Generate</button>
+
+			<p id = "demo" > </p>
+		</body>
+		</html>
